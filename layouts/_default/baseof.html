@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}" dir="{{ .Site.Language.LanguageDirection }}">
+    <head>
+        {{ partial "head/head.html" . }}
+    </head>
+    <body class="{{ .Params.bodyClass }}">
+        
+        {{ partial "navbar.html" . }}
+
+        <div class="container main-container flex on-phone--column extended">
+            
+            <main class="main full-width">
+                {{ block "main" . }}{{ end }}
+            </main>
+            
+        </div>
+        
+    </body>
+</html>

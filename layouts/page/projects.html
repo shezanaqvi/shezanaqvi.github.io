@@ -1,0 +1,53 @@
+{{ define "main" }}
+<div class="main-container" style="max-width: 1400px; margin: 0 auto; padding-top: 40px; padding-left: 40px; padding-right: 40px;">
+
+    <h1 style="font-size:  3rem; font-weight: 800; margin-bottom: 10px; color: #fff;">Projects</h1>
+    <p style="color: #8b949e; margin-bottom: 50px; font-size: 1.5rem;">
+        A collection of my work in robotics, perception, and autonomy.
+    </p>
+
+    <div style="margin-bottom: 60px;">
+        <h2 style="
+            font-size: 2.5rem; color: #84a3d9; border-bottom: 1px solid #30363d; 
+            padding-bottom: 15px; margin-bottom: 30px; display: flex; align-items: center; gap: 10px;">
+            <span>🤖</span> Robotics & Research
+        </h2>
+
+        <div class="project-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 25px;">
+            
+            <a href="#" class="project-card">
+                <div class="p-title">Autonomous Crop Mapping UAV</div>
+                <div class="p-desc">Custom carbon-fiber quadcopter with FAST-LIVO2 LiDAR odometry for precision agriculture.</div>
+                <div class="p-tags"><span>ROS 2</span><span>C++</span><span>LiDAR</span></div>
+            </a>
+
+            <a href="#" class="project-card">
+                <div class="p-title">Visual-to-Motion Drawing Arm</div>
+                <div class="p-desc">Vision-guided sketching system using Interbotix WidowX and MoveIt for dynamic drawing tasks.</div>
+                <div class="p-tags"><span>Python</span><span>MoveIt</span><span>OpenCV</span></div>
+            </a>
+
+            <a href="#" class="project-card">
+                <div class="p-title">Bayesian Age/Gender Prediction</div>
+                <div class="p-desc">Dual-head ResNet model with Monte Carlo dropout for uncertainty quantification.</div>
+                <div class="p-tags"><span>PyTorch</span><span>TensorFlow.js</span><span>DL</span></div>
+            </a>
+
+        </div>
+    </div>
+
+</div>
+
+<style>
+    .project-card {
+        background: #031529; border: 1px solid #30363d; border-radius: 12px; padding: 25px;
+        text-decoration: none; transition: transform 0.2s, border-color 0.2s;
+        display: flex; flex-direction: column;
+        height: 100%; /* Ensures all cards match height */
+    }
+    .project-card:hover { transform: translateY(-5px); border-color: #ff0080; }
+    .p-title { color: #e6edf3; font-weight: 700; font-size: 1.5rem; margin-bottom: 10px; }
+    .p-desc { color: #8b949e; font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px; flex-grow: 1; }
+    .p-tags span { display: inline-block; background: rgba(56, 139, 253, 0.15); color: #58a6ff; font-size: 1rem; padding: 4px 8px; border-radius: 4px; margin-right: 5px; }
+</style>
+{{ end }}

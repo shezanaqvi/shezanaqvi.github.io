@@ -1,0 +1,42 @@
+{{ define "main" }}
+<div class="main-container" style="max-width: 900px; margin: 0 auto; padding-top: 40px;">
+
+    <h1 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 10px; color: #fff;">{{ .Title }}</h1>
+    
+    {{ if .Params.description }}
+    <p style="color: #8b949e; margin-bottom: 40px; font-size: 2rem;">
+        {{ .Params.description }}
+    </p>
+    {{ end }}
+
+    <div class="cv-content" style="
+        background: #031529; 
+        border: 1px solid #30363d; 
+        border-radius: 12px; 
+        padding: 40px; 
+        color: #e6edf3;
+        line-height: 1.7;
+        font-size: 1.4rem;
+    ">
+        {{ .Content }}
+    </div>
+
+</div>
+
+<style>
+    /* Remove default link colors inside CV */
+    .cv-content a { color: #58a6ff; text-decoration: none; }
+    .cv-content a:hover { text-decoration: underline; }
+
+    /* Fix Headings */
+    .cv-content h1, .cv-content h2, .cv-content h3 { margin-top: 30px; margin-bottom: 15px; color: #fff; border-bottom: none; }
+    .cv-content h2 { border-bottom: 1px solid #30363d; padding-bottom: 10px; color: #84a3d9; }
+    
+    /* Fix Lists */
+    .cv-content ul { padding-left: 20px; margin-bottom: 20px; }
+    .cv-content li { margin-bottom: 8px; }
+
+    /* Remove the 'vertical bar' blockquote style from the default theme */
+    .cv-content blockquote { border-left: none; padding: 0; margin: 0; color: #8b949e; font-style: italic; }
+</style>
+{{ end }}

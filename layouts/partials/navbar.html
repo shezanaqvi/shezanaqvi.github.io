@@ -1,0 +1,83 @@
+<nav style="
+    width: 100%;
+    border-bottom: 1px solid #30363d;
+    margin-bottom: 40px;
+    background: #090329;
+">
+    
+    <div style="
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        width: 100%;
+        padding: 20px 40px;
+        box-sizing: border-box;
+    ">
+        
+        <div style="font-weight: 800; font-size: 3rem; color: #fff; letter-spacing: -1px;">
+            Sheza Abbas Naqvi<span style="color: #ff0080;"></span>
+        </div>
+
+        <div style="display: flex; gap: 25px; align-items: center;">
+            
+            <a href="/" style="
+                text-decoration: none; 
+                transition: color 0.2s;
+                {{ if .IsHome }} color: #fff; font-weight: 700; border-bottom: 2px solid #ff0080; {{ else }} color: #8b949e; {{ end }}
+            " onmouseover="this.style.color='#fff'" onmouseout="this.style.color='{{ if .IsHome }}#fff{{ else }}#8b949e{{ end }}'">
+                Home
+            </a>
+
+            <a href="/projects" style="
+                text-decoration: none; 
+                transition: color 0.2s;
+                {{ if eq .Title "Projects" }} color: #fff; font-weight: 700; border-bottom: 2px solid #ff0080; {{ else }} color: #8b949e; {{ end }}
+            " onmouseover="this.style.color='#fff'" onmouseout="this.style.color='{{ if eq .Title "Projects" }}#fff{{ else }}#8b949e{{ end }}'">
+                Projects
+            </a>
+
+            <a href="/cv" style="
+                text-decoration: none; 
+                transition: color 0.2s;
+                {{ if eq .Title "Curriculum Vitae" }} color: #fff; font-weight: 700; border-bottom: 2px solid #ff0080; {{ else }} color: #8b949e; {{ end }}
+            " onmouseover="this.style.color='#fff'" onmouseout="this.style.color='{{ if eq .Title "Curriculum Vitae" }}#fff{{ else }}#8b949e{{ end }}'">
+                CV
+            </a>
+
+            <a href="/archives" style="
+                text-decoration: none; 
+                transition: color 0.2s;
+                {{ if or (eq .Title "Archives") (eq .Section "post") }} color: #fff; font-weight: 700; border-bottom: 2px solid #ff0080; {{ else }} color: #8b949e; {{ end }}
+            " onmouseover="this.style.color='#fff'" onmouseout="this.style.color='{{ if or (eq .Title "Archives") (eq .Section "post") }}#fff{{ else }}#8b949e{{ end }}'">
+                Blogs
+            </a>
+            
+            <button id="theme-toggle" style="background: none; border: none; cursor: pointer; color: #8b949e; padding: 5px; display: flex; align-items: center; transition: color 0.2s;" onmouseover="this.style.color='#ff0080'" onmouseout="this.style.color='#8b949e'" onclick="toggleTheme()">
+                <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<script>
+    const html = document.documentElement;
+    const sun = document.getElementById('sun-icon');
+    const moon = document.getElementById('moon-icon');
+    const currentScheme = localStorage.getItem('scheme') || 'dark';
+    
+    function applyTheme(scheme) {
+        html.setAttribute('data-scheme', scheme);
+        if (sun && moon) {
+            if (scheme === 'dark') { sun.style.display = 'block'; moon.style.display = 'none'; } 
+            else { sun.style.display = 'none'; moon.style.display = 'block'; }
+        }
+    }
+    applyTheme(currentScheme);
+
+    function toggleTheme() {
+        const newScheme = html.getAttribute('data-scheme') === 'dark' ? 'light' : 'dark';
+        applyTheme(newScheme);
+        localStorage.setItem('scheme', newScheme);
+    }
+</script>

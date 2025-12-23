@@ -2,12 +2,70 @@
 
     {{ partial "hero.html" . }}
 
-    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-    
-    <section class="article-list--compact">
-        {{ range $paginator.Pages }}
-            {{ partial "article-list/compact.html" . }}
-        {{ end }}
-    </section>
+    <div style="max-width: 850px; margin: 0 auto; padding-top: 20px; padding-left: 20px; padding-right: 20px;">
+        
+        <h2 style="
+            color: #A2B6D9; /* Powder Blue */
+            font-size: 1.5rem; 
+            margin-bottom: 30px; 
+            display: flex; 
+            align-items: center; 
+            gap: 10px; 
+            border-bottom: 1px solid #1F2945; 
+            padding-bottom: 15px;
+        ">
+            <span>📰</span> Recent News
+        </h2>
+
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+            {{ range first 3 (where .Site.RegularPages "Section" "post") }}
+            <a href="{{ .RelPermalink }}" style="text-decoration: none;">
+                <div class="news-card">
+                    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px;">
+                        
+                        <h3 style="margin: 0; font-size: 1.2rem; font-weight: 800; color: #A2B6D9;">{{ .Title }}</h3>
+                        
+                        <span style="font-size: 0.85rem; color: #30363d; font-weight: 600;">{{ .Date.Format "Jan 02, 2006" }}</span>
+                    </div>
+                    
+                    <p style="margin: 0; color: #A2B6D9; font-size: 0.95rem; line-height: 1.5; font-weight: 500;">
+                        {{ .Summary | truncate 140 }}
+                    </p>
+                </div>
+            </a>
+            {{ end }}
+        </div>
+
+        <div style="margin-top: 30px; text-align: center;">
+            <a href="/archives" style="
+                color: #A2B6D9; 
+                text-decoration: none; 
+                font-weight: 600; 
+                font-size: 0.9rem; 
+                border-bottom: 1px dotted #A2B6D9; 
+                transition: color 0.2s;
+            " 
+               onmouseover="this.style.color='#fff'" 
+               onmouseout="this.style.color='#A2B6D9'">
+                View Blogs →
+            </a>
+        </div>
+
+    </div>
+
+    <style>
+        .news-card {
+            background: #031529; /* Powder Blue Card */
+            border: 1px solid #8fa3c4;
+            border-radius: 12px;
+            padding: 25px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .news-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(162, 182, 217, 0.2); /* Soft blue glow */
+            border-color: #fff;
+        }
+    </style>
 
 {{ end }}

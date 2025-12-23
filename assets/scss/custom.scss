@@ -3,7 +3,7 @@
 /* 1. FORCE VARIABLES ONTO STACK'S DARK MODE LAYER */
 [data-scheme="dark"] {
     --body-background: #090329 !important;      /* Your Deep Blue */
-    --card-background: #031429 !important;      /* Standard dark card */
+    --card-background: #031529 !important;      /* Standard dark card */
     --card-border: #30363d !important;          /* Subtle borders */
     --primary: #ff0080 !important;              /* Neon Pink */
     --secondary: #6b1885 !important;            /* Your Neon Purple */
@@ -65,4 +65,58 @@ body,
     background: var(--card-background) !important;
     border: 1px solid var(--card-border) !important;
     border-radius: 16px !important;
+}
+
+/* 7. LAYOUT OVERRIDES (The "Sidebar Up" Fix) */
+
+/* Hide the default Left Sidebar on desktop */
+@media (min-width: 1024px) {
+    .sidebar {
+        display: none !important;
+    }
+    
+    /* Center the main content */
+    .main-container {
+        min-height: 100vh !important;
+        width: 100% !important;
+        max-width: 1100px !important; 
+        margin: 0 auto !important;
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    /* Adjust Grid for full width */
+    .article-list--compact {
+        grid-template-columns: repeat(3, 1fr) !important; /* 3 Columns looks better centered */
+    }
+}
+
+/* 8. NUCLEAR OPTION: FORCE REMOVE TOP SPACING */
+.container {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    max-width: 100% !important; 
+}
+
+/* Ensure the body doesn't have default browser margin */
+body {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* 9. THE FINAL GAP FIX (NEW ADDITION) */
+/* This targets the inner wrapper that Stack often uses for padding */
+main, .main {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* Sets a specific small gap for the Nav Bar so it doesn't touch the browser edge */
+nav {
+    margin-top: 20px !important; 
+}
+/* 10. WIDE LAYOUT OVERRIDE (For Projects Page) */
+/* This overrides the strict 900px limit just for pages marked as 'wide-layout' */
+.wide-layout .main-container {
+    max-width: 1400px !important;
 }
