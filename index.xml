@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sheza Abbas Naqvi</title><link>https://shezanaqvi.github.io/</link><description>Recent content on Sheza Abbas Naqvi</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 24 Dec 2025 00:00:00 +0500</lastBuildDate><atom:link href="https://shezanaqvi.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>print("Hello, World!")</title><link>https://shezanaqvi.github.io/p/hello-world/</link><pubDate>Wed, 24 Dec 2025 00:00:00 +0500</pubDate><guid>https://shezanaqvi.github.io/p/hello-world/</guid><description>&lt;p&gt;Welcome to my new digital home!&lt;/p&gt;
+&lt;p&gt;Today, &lt;strong&gt;December 24, 2025&lt;/strong&gt;, marks the official launch of my personal website.&lt;/p&gt;
+&lt;p&gt;I designed this platform to serve as a central hub for my work in &lt;strong&gt;Electrical Engineering&lt;/strong&gt; and &lt;strong&gt;Robotics&lt;/strong&gt;. I built this site using &lt;strong&gt;Hugo&lt;/strong&gt;, heavily customized to focus on readability and structure.&lt;/p&gt;
+&lt;h3 id="what-you-will-find-here"&gt;What you will find here:
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Project Showcases:&lt;/strong&gt; Deep dives into my work with ROS 2, UAVs, and perception systems.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Research Notes:&lt;/strong&gt; Snippets of code, math, and theory from my studies.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dev Logs:&lt;/strong&gt; Updates on the tools and software I am building.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Stay tuned for more updates!&lt;/p&gt;</description></item><item><title>Archives</title><link>https://shezanaqvi.github.io/archives/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://shezanaqvi.github.io/archives/</guid><description/></item><item><title>Curriculum Vitae</title><link>https://shezanaqvi.github.io/cv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://shezanaqvi.github.io/cv/</guid><description>&lt;img src="https://shezanaqvi.github.io/img/avatar.png" alt="Featured image of post Curriculum Vitae" /&gt;&lt;h1 id="sheza-abbas-naqvi"&gt;Sheza Abbas Naqvi
+&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;Robotics &amp;amp; Perception Researcher&lt;/strong&gt; &lt;em&gt;Islamabad/Lahore, Pakistan&lt;/em&gt; | &lt;em&gt;&lt;a class="link" href="mailto:26100161@lums.edu.pk" &gt;26100161@lums.edu.pk&lt;/a&gt;&lt;/em&gt; | &lt;em&gt;&lt;a class="link" href="https://linkedin.com/in/sheza-naqvi" target="_blank" rel="noopener"
+&gt;LinkedIn&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="-research-interests"&gt;🔬 Research Interests
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Robust State Estimation &amp;amp; Control&lt;/strong&gt; | &lt;strong&gt;Multi-Modal Sensor Fusion (SLAM)&lt;/strong&gt; | &lt;strong&gt;Distributed Multi-Agent Systems&lt;/strong&gt; | &lt;strong&gt;Learning-Based Control&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="-education"&gt;🎓 Education
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Lahore University of Management Sciences (LUMS)&lt;/strong&gt; | &lt;em&gt;Sept 2022 – May 2026&lt;/em&gt; &lt;strong&gt;BS Electrical Engineering&lt;/strong&gt; (Minor in Computer Science)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Relevant Coursework:&lt;/strong&gt; Mobile Robotics, Dynamic Programming &amp;amp; RL, Machine Learning, Feedback Control Systems, Signals &amp;amp; Systems, Network-Centric Computing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="-technical-skills"&gt;🛠 Technical Skills
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Robotics:&lt;/strong&gt; ROS/ROS2, FAST-LIO2, ArduPilot/PX4, MoveIt, Gazebo, LiDAR Processing.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Languages:&lt;/strong&gt; C++ (Strong), Python (Advanced), MATLAB, SQL.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI &amp;amp; Vision:&lt;/strong&gt; OpenCV, PyTorch, TensorFlow, Keras, Agisoft Metashape.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DevOps/Tools:&lt;/strong&gt; Linux (Ubuntu), Docker, Git, SolidWorks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="-research--experience"&gt;💼 Research &amp;amp; Experience
+&lt;/h2&gt;&lt;h3 id="autonomous-uav-based-crop-growth-mapping-senior-year-project-may-2025--present-leading-a-multimodal-data-campaign-for-wheat-phenotyping-to-address-food-security"&gt;&lt;strong&gt;Autonomous UAV-Based Crop Growth Mapping (Senior Year Project)&lt;/strong&gt; &lt;em&gt;May 2025 – Present&lt;/em&gt; Leading a multimodal data campaign for wheat phenotyping to address food security.
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Hardware:&lt;/strong&gt; Architected a 500mm carbon-fiber quadcopter (Pixhawk 6C, Odroid N2+, Livox Mid-360).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Autonomy:&lt;/strong&gt; Developed a real-time stack on Linux integrating &lt;strong&gt;FAST-LIVO2&lt;/strong&gt; LiDAR odometry and &lt;strong&gt;ArduPilot EKF3&lt;/strong&gt; fusion.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mapping:&lt;/strong&gt; Generated high-fidelity 3D orthomosaics using Agisoft Metashape &amp;amp; Open3D for spatial-temporal analysis.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="visual-to-motion-robotic-drawing-jan-2025--april-2025--developed-a-vision-guided-sketching-system-for-an-interbotix-widow-x-250s-arm"&gt;&lt;strong&gt;Visual-to-Motion Robotic Drawing&lt;/strong&gt; &lt;em&gt;Jan 2025 – April 2025&lt;/em&gt; * Developed a vision-guided sketching system for an &lt;strong&gt;Interbotix Widow X 250s&lt;/strong&gt; arm.
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Designed a pipeline: Image contour extraction → Trajectory generation → Real-time execution via &lt;strong&gt;MoveIt&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Performed extrinsic calibration using RGB-D cameras (RealSense D455) and projective geometry.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="real-time-age--gender-prediction-jan-2025--april-2025--built-a-dual-head-resnet-deep-learning-system-for-simultaneous-age-regression-and-gender-classification"&gt;&lt;strong&gt;Real-Time Age &amp;amp; Gender Prediction&lt;/strong&gt; &lt;em&gt;Jan 2025 – April 2025&lt;/em&gt; * Built a dual-head &lt;strong&gt;ResNet&lt;/strong&gt; deep learning system for simultaneous age regression and gender classification.
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Implemented &lt;strong&gt;Bayesian inference&lt;/strong&gt; with Monte Carlo dropout to quantify predictive uncertainty.&lt;/li&gt;
+&lt;li&gt;Deployed via &lt;strong&gt;TensorFlow.js&lt;/strong&gt; for real-time in-browser inference.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="-teaching-experience"&gt;👩‍🏫 Teaching Experience
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;TA - Communication Systems (EE380):&lt;/strong&gt; (Sept 2025 – Present) Conducted tutorials and graded for 30+ students.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- * **TA - Junior Design Studio (Robotics):** (Upcoming Spring 2026) Selected to redesign lab modules focusing on manipulator control. --&gt;
+&lt;hr&gt;
+&lt;h2 id="-honors--media"&gt;🏆 Honors &amp;amp; Media
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Featured Research:&lt;/strong&gt; &amp;ldquo;Smarter Farming, Lower Cost&amp;rdquo; – Center for Water Informatics (WIT), 2025.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Writing:&lt;/strong&gt; Authored &amp;ldquo;CYTE Foundation: Educating Pakistan&amp;rsquo;s Future&amp;rdquo; &amp;amp; Co-Editor-in-Chief of &lt;em&gt;SuperNova Gazette&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Links</title><link>https://shezanaqvi.github.io/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://shezanaqvi.github.io/links/</guid><description>&lt;p&gt;To use this feature, add &lt;code&gt;links&lt;/code&gt; section to frontmatter.&lt;/p&gt;
+&lt;p&gt;This page&amp;rsquo;s frontmatter:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;span class="lnt"&gt;8
+&lt;/span&gt;&lt;span class="lnt"&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;links&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;- &lt;span class="nt"&gt;title&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;GitHub&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;description&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;GitHub is the world&amp;#39;s largest software development platform.&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;website&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;https://github.com&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;image&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;- &lt;span class="nt"&gt;title&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;TypeScript&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;description&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;website&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;https://www.typescriptlang.org&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;image&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;ts-logo-128.jpg&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;code&gt;image&lt;/code&gt; field accepts both local and external images.&lt;/p&gt;</description></item><item><title>Projects</title><link>https://shezanaqvi.github.io/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://shezanaqvi.github.io/projects/</guid><description/></item><item><title>Search</title><link>https://shezanaqvi.github.io/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://shezanaqvi.github.io/search/</guid><description/></item></channel></rss>
