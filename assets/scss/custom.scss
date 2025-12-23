@@ -1,23 +1,68 @@
-/* Coderon Theme Overrides */
-:root {
-    --body-background: #0d1117;
-    --card-background: #161b22;
-    --card-border: 1px solid #30363d;
-    --primary: #ff0080; /* Neon Pink */
-    --secondary: #7928ca; /* Neon Purple */
-    --text-main: #c9d1d9;
+/* custom.scss - Coderon Clone (Final Fix) */
+
+/* 1. FORCE VARIABLES ONTO STACK'S DARK MODE LAYER */
+[data-scheme="dark"] {
+    --body-background: #090329 !important;      /* Your Deep Blue */
+    --card-background: #031429 !important;      /* Standard dark card */
+    --card-border: #30363d !important;          /* Subtle borders */
+    --primary: #ff0080 !important;              /* Neon Pink */
+    --secondary: #6b1885 !important;            /* Your Neon Purple */
+    --text-main: #e6edf3 !important;            /* White text */
+    --text-muted: #8b949e !important;           /* Gray text */
 }
 
-/* Force the dark background immediately */
-body {
+/* 2. APPLY BACKGROUND & TEXT COLORS */
+body, 
+[data-scheme="dark"] body {
     background-color: var(--body-background) !important;
-    color: var(--text-main);
+    color: var(--text-main) !important;
 }
 
-/* Give cards that specific Coderon "border" look */
-.article-list--compact article, 
+/* 3. TRANSFORM LIST TO GRID (The "Dashboard" Look) */
+.article-list--compact {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 25px;
+    padding-bottom: 50px;
+}
+
+/* 4. CARD STYLING */
+.article-list--compact article {
+    background: var(--card-background) !important;
+    border: 1px solid var(--card-border) !important;
+    border-radius: 16px !important; 
+    padding: 0 !important; 
+    flex-direction: column !important; /* Image on TOP */
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: none !important; 
+}
+
+/* Hover Effects */
+.article-list--compact article:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary) !important; 
+    box-shadow: 0 0 20px rgba(255, 0, 128, 0.2) !important; /* Pink Glow */
+}
+
+/* 5. FIX IMAGES */
+.article-list--compact article .article-image {
+    width: 100% !important;
+    height: 200px !important; 
+    margin: 0 !important;
+    clip-path: none !important; /* Removes Stack's diagonal cut */
+}
+
+.article-list--compact article .article-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px 16px 0 0 !important; 
+}
+
+/* 6. WIDGETS (SIDEBAR) STYLING */
 .widget {
     background: var(--card-background) !important;
-    border: var(--card-border);
-    box-shadow: none !important;
+    border: 1px solid var(--card-border) !important;
+    border-radius: 16px !important;
 }

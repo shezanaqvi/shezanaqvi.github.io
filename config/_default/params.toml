@@ -4,6 +4,11 @@ mainSections = ["post"]
 rssFullContent = true
 favicon = "/favicon.png"
 
+# --- NEW SECTION: THIS LOADS YOUR CUSTOM CSS ---
+[style]
+customCSS = ["custom.scss"] 
+# -----------------------------------------------
+
 [footer]
 since = 2020
 customText = ""
@@ -13,8 +18,8 @@ published = "Jan 02, 2006"
 lastUpdated = "Jan 02, 2006 15:04 MST"
 
 [sidebar]
-emoji = "🍥"
-subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+emoji = "👋" # Changed from 🍥 to match Coderon vibe
+subtitle = "A digital explorer, coder, and linux advocate." # Updated text
 
 [sidebar.avatar]
 enabled = true
@@ -66,7 +71,7 @@ src = ""
 
 [colorScheme]
 toggle = true
-default = "auto"
+default = "dark" # CHANGED: Forces Dark Mode by default
 
 [imageProcessing.cover]
 enabled = true

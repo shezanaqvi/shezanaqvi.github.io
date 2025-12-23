@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+    {{ partial "hero.html" . }}
+
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+    
+    <section class="article-list--compact">
+        {{ range $paginator.Pages }}
+            {{ partial "article-list/compact.html" . }}
+        {{ end }}
+    </section>
+
+{{ end }}
