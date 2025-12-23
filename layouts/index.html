@@ -1,6 +1,7 @@
 {{ define "main" }}
 
     {{ partial "hero.html" . }}
+    {{ partial "nerd-stuff.html" . }}
 
     <div style="max-width: 850px; margin: 0 auto; padding-top: 20px; padding-left: 20px; padding-right: 20px;">
         
@@ -28,7 +29,7 @@
                         <span style="font-size: 0.85rem; color: #30363d; font-weight: 600;">{{ .Date.Format "Jan 02, 2006" }}</span>
                     </div>
                     
-                    <p style="margin: 0; color: #A2B6D9; font-size: 0.95rem; line-height: 1.5; font-weight: 500;">
+                    <p style="margin: 0; color: #A2B6D9; font-size: 0.85rem; line-height: 1.5; font-weight: 500;">
                         {{ .Summary | truncate 140 }}
                     </p>
                 </div>

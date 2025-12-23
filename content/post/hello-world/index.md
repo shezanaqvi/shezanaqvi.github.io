@@ -1,20 +1,21 @@
 ---
-title: Hello World
-description: Welcome to Hugo Theme Stack
+title: print("Hello, World!")
+description: Site Launch
 slug: hello-world
-date: 2022-03-06 00:00:00+0000
-image: cover.jpg
-categories:
-    - Example Category
-tags:
-    - Example Tag
-weight: 1       # You can add weight to some posts to override the default sorting (date descending)
+date: 2025-12-24 00:00:00+0500
+image: 
+weight: 1
 ---
 
-Welcome to Hugo theme Stack. This is your first post. Edit or delete it, then start writing!
+Welcome to my new digital home! 
 
-For more information about this theme, check the documentation: https://stack.jimmycai.com/
+Today, **December 24, 2025**, marks the official launch of my personal website. 
 
-Want a site like this? Check out [hugo-theme-stack-stater](https://github.com/CaiJimmy/hugo-theme-stack-starter)
+I designed this platform to serve as a central hub for my work in **Electrical Engineering** and **Robotics**. I built this site using **Hugo**, heavily customized to focus on readability and structure.
 
-> Photo by [Pawel Czerwinski](https://unsplash.com/@pawel_czerwinski) on [Unsplash](https://unsplash.com/)
+### What you will find here:
+* **Project Showcases:** Deep dives into my work with ROS 2, UAVs, and perception systems.
+* **Research Notes:** Snippets of code, math, and theory from my studies.
+* **Dev Logs:** Updates on the tools and software I am building.
+
+Stay tuned for more updates!
