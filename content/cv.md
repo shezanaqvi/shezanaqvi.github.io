@@ -38,16 +38,31 @@ menu:
 
 ## 💼 Research & Experience
 
-### **Autonomous UAV-Based Crop Growth Mapping (Senior Year Project)** *May 2025 – Present* Leading a multimodal data campaign for wheat phenotyping to address food security.
+### **Autonomous UAV-Based Crop Growth Mapping (Senior Year Project)** *May 2025 – Present*
+Leading a multimodal data campaign for wheat phenotyping to address food security.
 * **Hardware:** Architected a 500mm carbon-fiber quadcopter (Pixhawk 6C, Odroid N2+, Livox Mid-360).
 * **Autonomy:** Developed a real-time stack on Linux integrating **FAST-LIVO2** LiDAR odometry and **ArduPilot EKF3** fusion.
 * **Mapping:** Generated high-fidelity 3D orthomosaics using Agisoft Metashape & Open3D for spatial-temporal analysis.
 
-### **Visual-to-Motion Robotic Drawing** *Jan 2025 – April 2025* * Developed a vision-guided sketching system for an **Interbotix Widow X 250s** arm.
+### **Safe Multi-Agent RL for Cooperative Navigation** *Sept 2025 – Dec 2025*
+*Developed a safe navigation framework combining reinforcement learning with control-theoretic safety.*
+* Built a custom Python simulation to train a decentralized **Soft Actor-Critic (SAC)** model with a centralized attention critic.
+* Integrated a hybrid **MPC safety shield** (ACADOS) to guarantee collision constraints during training, achieving **66.5% success** in obstacle-dense environments.
+* Implemented a three-stage curriculum learning strategy to progressively learn formation control and obstacle avoidance.
+
+### **Stochastic Utility-Aware Multi-Robot Task Allocation** *Sept 2025 – Dec 2025*
+*Designed a unified warehouse coordination system for conflict-free multi-agent planning.*
+* Proposed a hybrid architecture combining **SCOBA** for utility-based task allocation and **PM-CBS** for conflict-free path planning.
+* Implemented **EKF localization** with a beam-based LiDAR model to robustly track trajectories under sensing noise.
+* Achieved **zero collisions** and superior utility efficiency compared to Greedy A* and Q-learning baselines in simulation.
+
+### **Visual-to-Motion Robotic Drawing** *Jan 2025 – April 2025*
+*Developed a vision-guided sketching system for an **Interbotix Widow X 250s** arm.*
 * Designed a pipeline: Image contour extraction → Trajectory generation → Real-time execution via **MoveIt**.
 * Performed extrinsic calibration using RGB-D cameras (RealSense D455) and projective geometry.
 
-### **Real-Time Age & Gender Prediction** *Jan 2025 – April 2025* * Built a dual-head **ResNet** deep learning system for simultaneous age regression and gender classification.
+### **Real-Time Age & Gender Prediction** *Jan 2025 – April 2025*
+*Built a dual-head **ResNet** deep learning system for simultaneous age regression and gender classification.*
 * Implemented **Bayesian inference** with Monte Carlo dropout to quantify predictive uncertainty.
 * Deployed via **TensorFlow.js** for real-time in-browser inference.
 
@@ -55,8 +70,6 @@ menu:
 
 ## 👩‍🏫 Teaching Experience
 * **TA - Communication Systems (EE380):** (Sept 2025 – Present) Conducted tutorials and graded for 30+ students.
-<!-- * **TA - Junior Design Studio (Robotics):** (Upcoming Spring 2026) Selected to redesign lab modules focusing on manipulator control. -->
-
 ---
 
 ## 🏆 Honors & Media
