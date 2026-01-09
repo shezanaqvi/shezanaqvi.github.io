@@ -1,37 +1,144 @@
 {{ define "main" }}
-<div class="main-container" style="max-width: 1400px; margin: 0 auto; padding-top: 40px; padding-left: 40px; padding-right: 40px;">
+<div class="main-container" style="max-width: 1200px; margin: 0 auto; padding: 40px 20px;">
 
-    <h1 style="font-size:  3rem; font-weight: 800; margin-bottom: 10px; color: #fff;">Projects</h1>
-    <p style="color: #8b949e; margin-bottom: 50px; font-size: 1.5rem;">
+    <h1 style="font-size: 3rem; font-weight: 800; margin-bottom: 10px; color: #ffffff;">Projects</h1>
+    <p style="color: #8b949e; margin-bottom: 50px; font-size: 1.3rem;">
         A collection of my work in robotics, perception, and autonomy.
     </p>
 
     <div style="margin-bottom: 60px;">
         <h2 style="
-            font-size: 2.5rem; color: #84a3d9; border-bottom: 1px solid #30363d; 
+            font-size: 2rem; color: #58a6ff; border-bottom: 1px solid #30363d; 
             padding-bottom: 15px; margin-bottom: 30px; display: flex; align-items: center; gap: 10px;">
-            <span>🤖</span> Robotics & Research
+            <span>🚀</span> Selected Research (Capstone)
         </h2>
 
-        <div class="project-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 25px;">
+        <div class="project-card featured" style="
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column; 
+            transition: transform 0.2s;
+        ">
+            <div class="card-media-area featured-media" style="
+                display: grid; 
+                grid-template-columns: 1fr 1fr; 
+                gap: 4px; 
+                background: #000;
+                min-height: 350px; 
+            ">
+                
+                <div style="position: relative; width: 100%; height: 100%; overflow: hidden;">
+                    <video class="card-img zoom-crop" autoplay loop muted playsinline>
+                        <source src="/img/sproj_real.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-label">Real World</div>
+                </div>
+
+                <div style="position: relative; width: 100%; height: 100%; overflow: hidden;">
+                    <video class="card-img" autoplay loop muted playsinline>
+                        <source src="/img/sproj_sim.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-label">Rviz / SLAM</div>
+                </div>
+
+                <div class="card-badge" style="z-index: 10;">Senior Capstone (SPROJ)</div>
+            </div>
+
+            <div style="padding: 30px; flex: 1;">
+                <h3 style="margin: 0 0 15px 0; color: #e6edf3; font-size: 1.8rem; font-weight: 700;">
+                    Autonomous UAV for Crop Phenotyping in GPS-Denied Environments
+                </h3>
+                <div style="margin-bottom: 20px;">
+                    <span class="tech-tag">ROS 2</span>
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">FAST-LIVO2</span>
+                    <span class="tech-tag">Pixhawk 6C</span>
+                </div>
+                <p style="color: #8b949e; line-height: 1.6; font-size: 1.1rem; margin-bottom: 0;">
+                    <strong>The Challenge:</strong> Standard GPS drones fail in dense crop canopies due to signal multipath and lack of geometric features for visual SLAM.
+                    <br><br>
+                    <strong>The Solution:</strong> Architected a custom 500mm carbon-fiber quadcopter with an onboard <strong>Odroid N2+</strong>. Implemented <strong>FAST-LIVO2</strong> (LiDAR-Inertial Odometry) to achieve drift-free state estimation (< 2% over 500m) without GPS. Integrated <strong>ArduPilot EKF3</strong> for sensor fusion.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-bottom: 60px;">
+        <h2 style="
+            font-size: 2rem; color: #58a6ff; border-bottom: 1px solid #30363d; 
+            padding-bottom: 15px; margin-bottom: 30px; display: flex; align-items: center; gap: 10px;">
+            <span>🤖</span> Research & Engineering
+        </h2>
+
+        <div class="project-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
             
-            <a href="#" class="project-card">
-                <div class="p-title">Autonomous Crop Mapping UAV</div>
-                <div class="p-desc">Custom carbon-fiber quadcopter with FAST-LIVO2 LiDAR odometry for precision agriculture.</div>
-                <div class="p-tags"><span>ROS 2</span><span>C++</span><span>LiDAR</span></div>
-            </a>
+            <div class="project-card">
+                <div class="card-media-area grid-media" style="overflow: hidden;">
+                    <video class="card-img" autoplay loop muted playsinline>
+                        <source src="/img/marl_demo.mp4" type="video/mp4">
+                    </video>
+                </div>
 
-            <a href="#" class="project-card">
-                <div class="p-title">Visual-to-Motion Drawing Arm</div>
-                <div class="p-desc">Vision-guided sketching system using Interbotix WidowX and MoveIt for dynamic drawing tasks.</div>
-                <div class="p-tags"><span>Python</span><span>MoveIt</span><span>OpenCV</span></div>
-            </a>
+                <div class="card-content">
+                    <h4 class="card-title">Safe Multi-Agent RL for Cooperative Navigation</h4>
+                    <div style="margin-bottom: 15px;">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">SAC</span>
+                        <span class="tech-tag">MPC</span>
+                    </div>
+                    <p class="card-text">
+                        Developed a safe MARL framework combining <strong>Soft Actor-Critic (SAC)</strong> with a centralized attention mechanism. Integrated a hybrid <strong>Model Predictive Control (MPC)</strong> safety shield to enforce hard collision constraints. Achieved <strong>80.5% success rates</strong> in complex obstacle environments.
+                    </p>
+                </div>
+            </div>
 
-            <a href="#" class="project-card">
-                <div class="p-title">Bayesian Age/Gender Prediction</div>
-                <div class="p-desc">Dual-head ResNet model with Monte Carlo dropout for uncertainty quantification.</div>
-                <div class="p-tags"><span>PyTorch</span><span>TensorFlow.js</span><span>DL</span></div>
-            </a>
+            <div class="project-card">
+                <div class="card-media-area grid-media" style="overflow: hidden;">
+                    <video class="card-img" autoplay loop muted playsinline>
+                        <source src="/img/scoba_demo.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="card-content">
+                    <h4 class="card-title">Stochastic Multi-Robot Task Allocation (SCOBA)</h4>
+                    <div style="margin-bottom: 15px;">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PM-CBS</span>
+                        <span class="tech-tag">EKF</span>
+                    </div>
+                    <p class="card-text">
+                        Designed a unified warehouse coordination system combining <strong>Stochastic Utility-Based Allocation</strong> with <strong>Priority-Based Conflict-Based Search (PM-CBS)</strong>. Implemented <strong>EKF localization</strong> and topometric graph planning to generate collision-free, time-consistent trajectories.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-card" style="padding: 25px;">
+                <h4 class="card-title">Visual-to-Motion Robotic Sketching Arm</h4>
+                <div style="margin-bottom: 15px;">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">MoveIt</span>
+                    <span class="tech-tag">OpenCV</span>
+                </div>
+                <p class="card-text">
+                    Developed a perception-action pipeline using <strong>OpenCV</strong> for contour extraction and <strong>Inverse Kinematics (IK)</strong> solvers in MoveIt. Performed extrinsic calibration with a RealSense D455 to enable dynamic sketching.
+                </p>
+            </div>
+
+            <div class="project-card" style="padding: 25px;">
+                <h4 class="card-title">Bayesian Deep Learning for Uncertainty</h4>
+                <div style="margin-bottom: 15px;">
+                    <span class="tech-tag">PyTorch</span>
+                    <span class="tech-tag">ResNet</span>
+                    <span class="tech-tag">TensorFlow.js</span>
+                </div>
+                <p class="card-text">
+                    Built a dual-head ResNet model for simultaneous age and gender classification. Implemented <strong>Monte Carlo Dropout</strong> to quantify predictive uncertainty, allowing the system to flag "low-confidence" predictions in real-time.
+                </p>
+            </div>
 
         </div>
     </div>
@@ -39,15 +146,96 @@
 </div>
 
 <style>
+    /* 1. Base Card Styling */
     .project-card {
-        background: #031529; border: 1px solid #30363d; border-radius: 12px; padding: 25px;
-        text-decoration: none; transition: transform 0.2s, border-color 0.2s;
+        background: #0d1117;
+        border: 1px solid #30363d;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         display: flex; flex-direction: column;
-        height: 100%; /* Ensures all cards match height */
+        transition: transform 0.2s, border-color 0.2s;
     }
-    .project-card:hover { transform: translateY(-5px); border-color: #ff0080; }
-    .p-title { color: #e6edf3; font-weight: 700; font-size: 1.5rem; margin-bottom: 10px; }
-    .p-desc { color: #8b949e; font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px; flex-grow: 1; }
-    .p-tags span { display: inline-block; background: rgba(56, 139, 253, 0.15); color: #58a6ff; font-size: 1rem; padding: 4px 8px; border-radius: 4px; margin-right: 5px; }
+    .project-card:hover { transform: translateY(-3px); border-color: #58a6ff !important; }
+
+    /* 2. Media Areas */
+    .card-media-area {
+        background: #161b22;
+        position: relative;
+        overflow: hidden; 
+        border-bottom: 1px solid #30363d;
+    }
+    .grid-media { height: 200px; }
+
+    /* --- SPECIAL ZOOM CLASS (Applied only to Real World video) --- */
+    .zoom-crop {
+        width: 100%; 
+        height: 100%;
+        object-fit: cover; 
+        transform: scale(1.35); /* Zoom in 35% */
+        transform-origin: center center;
+    }
+
+    /* Standard Card Image/Video */
+    .card-img {
+        width: 100%; height: 100%;
+        object-fit: cover;
+        position: absolute; top: 0; left: 0;
+        opacity: 0.9;
+        transition: opacity 0.3s;
+    }
+    .project-card:hover .card-img { opacity: 1.0; }
+
+    .video-label {
+        position: absolute; bottom: 10px; left: 10px;
+        background: rgba(0,0,0,0.7); color: #fff;
+        padding: 3px 8px; border-radius: 4px;
+        font-size: 0.75rem; font-weight: 600;
+        pointer-events: none;
+        z-index: 5;
+    }
+
+    /* 3. Text & Tags */
+    .card-content { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
+    .card-title { margin-top: 0; color: #e6edf3; font-size: 1.4rem; font-weight: 700; margin-bottom: 10px; }
+    .card-text { font-size: 1rem; color: #8b949e; line-height: 1.6; flex-grow: 1; }
+
+    .tech-tag {
+        display: inline-block;
+        background: rgba(56, 139, 253, 0.15); color: #58a6ff;
+        padding: 5px 12px; border-radius: 6px;
+        font-size: 0.85rem; font-weight: 600;
+        margin-right: 6px; margin-bottom: 6px;
+        border: 1px solid rgba(56, 139, 253, 0.4);
+    }
+
+    .card-badge {
+        position: absolute; top: 20px; right: 20px;
+        background: #58a6ff; color: #0d1117;
+        padding: 6px 15px; border-radius: 20px;
+        font-size: 0.85rem; font-weight: 700;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    /* 4. Buttons */
+    .btn-outline {
+        display: inline-block; padding: 10px 20px;
+        border: 1px solid #8b949e; color: #e6edf3;
+        text-decoration: none; border-radius: 8px;
+        font-size: 1rem; font-weight: 600;
+        transition: all 0.2s ease;
+    }
+    .btn-outline:hover { background: #e6edf3; color: #0d1117; border-color: #e6edf3; }
+
+    /* 5. Responsive */
+    @media (min-width: 850px) {
+        .project-card.featured { flex-direction: row; }
+        .project-card.featured > .card-media-area {
+            flex: 1.1; height: auto; 
+            min-height: 350px; 
+            border-bottom: none; border-right: 1px solid #30363d;
+        }
+        .project-card.featured > div:last-child { flex: 1; }
+    }
 </style>
 {{ end }}
