@@ -58,7 +58,7 @@ src = ""
 
 [colorScheme]
 toggle = true
-default = "dark" # CHANGED: Forces Dark Mode by default
+default = "light" # CHANGED: Forces Dark Mode by default
 
 [imageProcessing.cover]
 enabled = true

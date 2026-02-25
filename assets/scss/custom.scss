@@ -1,7 +1,8 @@
 /* custom.scss - Coderon Clone (Final PhD Version) */
 
-/* 1. FORCE VARIABLES GLOBALLY (Defaults to Dark Mode/Deep Blue) */
-:root, [data-scheme="dark"] {
+/* 1. GLOBAL VARIABLES - DEFAULT (Deep Blue Dashboard) */
+/* This is your standard professional mode */
+:root, [data-scheme="light"] {
     --body-background: #090329 !important;      /* Your Deep Blue */
     --card-background: #031529 !important;      /* Standard dark card */
     --card-border: #30363d !important;          /* Subtle borders */
@@ -16,11 +17,10 @@
 }
 
 /* 2. APPLY BACKGROUND & TEXT COLORS */
-/* REMOVED [data-scheme="light"] from here to allow the Easter Egg to take over */
 body, 
-[data-scheme="dark"] body {
-    background-color: var(--body-background) !important;
-    color: var(--text-main) !important;
+[data-scheme="light"] body {
+    background-color: #090329 !important;
+    color: #e6edf3 !important;
 }
 
 /* 3. TRANSFORM LIST TO GRID (The "Dashboard" Look) */
@@ -119,7 +119,7 @@ nav {
     max-width: 1400px !important;
 }
 
-/* 11. CV PAGE - FLAT NAVY THEME (NO CARD) */
+/* 11. CV PAGE STYLING */
 .cv-content {
     background: transparent !important; 
     border: none !important;            
@@ -160,10 +160,6 @@ nav {
     margin-bottom: 10px;
 }
 
-.cv-content strong {
-    color: #ffffff !important; 
-}
-
 .cv-content a {
     color: #58a6ff !important; 
     text-decoration: none;
@@ -175,19 +171,6 @@ nav {
     border-bottom: 1px solid #ffffff;
 }
 
-.cv-content li {
-    line-height: 1.8;
-    margin-bottom: 14px; 
-}
-
-.cv-content blockquote {
-    border-left: 2px solid #30363d !important;
-    padding-left: 18px;
-    color: #8b949e !important;
-    font-style: italic;
-    font-size: 1.2rem;
-}
-
 @media (max-width: 768px) {
     .cv-main-title { font-size: 2rem !important; }
     .cv-description { font-size: 1.1rem !important; margin-bottom: 25px; }
@@ -195,8 +178,9 @@ nav {
     .cv-content h2 { font-size: 1.3rem !important; margin-top: 30px; }
 }
 
-/* 13. THE "AMBER TERMINAL" EASTER EGG (Hijacks Light Mode) */
-[data-scheme="light"] {
+/* 13. THE "AMBER TERMINAL" EASTER EGG (Hijacks Dark Mode) */
+/* Clicking the MOON icon takes you here */
+[data-scheme="dark"] {
     --body-background: #050505 !important; 
     --card-background: transparent !important;
     --card-border: #FFB000 !important;     
@@ -209,48 +193,48 @@ nav {
 }
 
 /* Force Amber font & color in Terminal Mode */
-[data-scheme="light"] body,
-[data-scheme="light"] .main-container *,
-[data-scheme="light"] h1, [data-scheme="light"] h2, [data-scheme="light"] h3,
-[data-scheme="light"] p, [data-scheme="light"] a, [data-scheme="light"] span,
-[data-scheme="light"] li, [data-scheme="light"] div {
+[data-scheme="dark"] body,
+[data-scheme="dark"] .main-container *,
+[data-scheme="dark"] h1, [data-scheme="dark"] h2, [data-scheme="dark"] h3,
+[data-scheme="dark"] p, [data-scheme="dark"] a, [data-scheme="dark"] span,
+[data-scheme="dark"] li, [data-scheme="dark"] div {
     font-family: 'Courier New', Courier, monospace !important;
     color: #FFB000 !important;
     text-shadow: 0 0 4px rgba(255, 176, 0, 0.4); 
 }
 
-[data-scheme="light"] .cv-content h2,
-[data-scheme="light"] .blog-card-header,
-[data-scheme="light"] a {
+[data-scheme="dark"] .cv-content h2,
+[data-scheme="dark"] .blog-card-header,
+[data-scheme="dark"] a {
     border-color: #FFB000 !important;
 }
 
-[data-scheme="light"] a:hover,
-[data-scheme="light"] .blog-list-card:hover,
-[data-scheme="light"] .news-card:hover {
+[data-scheme="dark"] a:hover,
+[data-scheme="dark"] .blog-list-card:hover,
+[data-scheme="dark"] .news-card:hover {
     background-color: #FFB000 !important;
     color: #000000 !important;
     text-shadow: none !important;
 }
 
-[data-scheme="light"] a:hover *,
-[data-scheme="light"] .blog-list-card:hover *,
-[data-scheme="light"] .news-card:hover * {
+[data-scheme="dark"] a:hover *,
+[data-scheme="dark"] .blog-list-card:hover *,
+[data-scheme="dark"] .news-card:hover * {
     color: #000000 !important; 
 }
 
-[data-scheme="light"] .hero-card, 
-[data-scheme="light"] #hero-card-id,
-[data-scheme="light"] .partial-hero-container {
+[data-scheme="dark"] .hero-card, 
+[data-scheme="dark"] #hero-card-id,
+[data-scheme="dark"] .partial-hero-container {
     background: #0a0a0a !important; 
     border: 2px solid #FFB000 !important; 
     box-shadow: 0 0 15px rgba(255, 176, 0, 0.15) !important;
 }
 
-/* Clean Photo Mode: Removed the sepia filter to keep photos in full color */
-[data-scheme="light"] .hero-card img, 
-[data-scheme="light"] .avatar,
-[data-scheme="light"] .article-image img {
+/* Photo Mode: Keep original colors while in Terminal mode */
+[data-scheme="dark"] .hero-card img, 
+[data-scheme="dark"] .avatar,
+[data-scheme="dark"] .article-image img {
     border: 2px solid #FFB000 !important;
-    filter: none !important; /* Forces original colors */
+    filter: none !important; 
 }
