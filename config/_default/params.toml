@@ -4,6 +4,11 @@ mainSections = ["post"]
 rssFullContent = true
 favicon = "https://github.com/shezanaqvi.png"
 
+
+[services]
+  [services.googleAnalytics]
+    id = 'G-6PR2GBQ9BZ'
+
 # --- NEW SECTION: THIS LOADS YOUR CUSTOM CSS ---
 [style]
 customCSS = ["custom.scss"] 
@@ -135,3 +140,4 @@ clientSecret = ""
 [comments.cusdis]
 host = ""
 id = ""
+
