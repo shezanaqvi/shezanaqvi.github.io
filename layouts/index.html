@@ -3,19 +3,18 @@
     {{ partial "hero.html" . }}
     {{ partial "nerd-stuff.html" . }}
 
-    <div style="max-width: 850px; margin: 0 auto; padding-top: 20px; padding-left: 20px; padding-right: 20px;">
+    <div style="max-width: 900px; margin: 0 auto; padding-top: 40px; padding-left: 20px; padding-right: 20px; padding-bottom: 60px;">
         
         <h2 style="
-            color: #A2B6D9; /* Powder Blue */
+            color: #A2B6D9; /* Slate Blue */
             font-size: 1.5rem; 
             margin-bottom: 30px; 
-            display: flex; 
-            align-items: center; 
-            gap: 10px; 
-            border-bottom: 1px solid #1F2945; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid rgba(162, 182, 217, 0.2); 
             padding-bottom: 15px;
         ">
-            <span>📰</span> Recent News
+            Recent News
         </h2>
 
         <div style="display: flex; flex-direction: column; gap: 20px;">
@@ -24,31 +23,31 @@
                 <div class="news-card">
                     <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px;">
                         
-                        <h3 style="margin: 0; font-size: 1.2rem; font-weight: 800; color: #A2B6D9;">{{ .Title }}</h3>
+                        <h3 style="margin: 0; font-size: 1.3rem; font-weight: 700; color: #ffffff;">{{ .Title }}</h3>
                         
-                        <span style="font-size: 0.85rem; color: #30363d; font-weight: 600;">{{ .Date.Format "Jan 02, 2006" }}</span>
+                        <span style="font-size: 0.95rem; color: #8b949e; font-weight: 500;">{{ .Date.Format "Jan 02, 2006" }}</span>
                     </div>
                     
-                    <p style="margin: 0; color: #A2B6D9; font-size: 0.85rem; line-height: 1.5; font-weight: 500;">
-                        {{ .Summary | truncate 140 }}
+                    <p style="margin: 0; color: #8b949e; font-size: 1.05rem; line-height: 1.7; font-weight: 400;">
+                        {{ .Summary | plainify | truncate 140 }}
                     </p>
                 </div>
             </a>
             {{ end }}
         </div>
 
-        <div style="margin-top: 30px; text-align: center;">
+        <div style="margin-top: 40px; text-align: center;">
             <a href="/archives" style="
-                color: #A2B6D9; 
+                color: #58a6ff; 
                 text-decoration: none; 
                 font-weight: 600; 
-                font-size: 0.9rem; 
-                border-bottom: 1px dotted #A2B6D9; 
-                transition: color 0.2s;
+                font-size: 1.05rem; 
+                border-bottom: 1px solid rgba(88, 166, 255, 0.3); 
+                transition: all 0.2s;
             " 
-               onmouseover="this.style.color='#fff'" 
-               onmouseout="this.style.color='#A2B6D9'">
-                View Blogs →
+               onmouseover="this.style.color='#fff'; this.style.borderColor='#fff';" 
+               onmouseout="this.style.color='#58a6ff'; this.style.borderColor='rgba(88, 166, 255, 0.3)';">
+                View All Blogs →
             </a>
         </div>
 
@@ -56,16 +55,16 @@
 
     <style>
         .news-card {
-            background: #031529; /* Powder Blue Card */
-            border: 1px solid #8fa3c4;
+            background: transparent; /* Flat layout to match CV */
+            border: 1px solid #30363d; /* Subtle dark grey border */
             border-radius: 12px;
             padding: 25px;
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: all 0.2s ease;
         }
         .news-card:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(162, 182, 217, 0.2); /* Soft blue glow */
-            border-color: #fff;
+            border-color: #58a6ff; /* Crisp blue hover effect */
+            background: rgba(88, 166, 255, 0.03); /* Extremely subtle blue tint on hover */
         }
     </style>
 

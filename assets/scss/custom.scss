@@ -1,7 +1,7 @@
 /* custom.scss - Coderon Clone (Final PhD Version) */
 
-/* 1. FORCE VARIABLES GLOBALLY (Overrides Light Mode & System Preferences) */
-:root, [data-scheme="light"], [data-scheme="dark"] {
+/* 1. FORCE VARIABLES GLOBALLY (Defaults to Dark Mode/Deep Blue) */
+:root, [data-scheme="dark"] {
     --body-background: #090329 !important;      /* Your Deep Blue */
     --card-background: #031529 !important;      /* Standard dark card */
     --card-border: #30363d !important;          /* Subtle borders */
@@ -10,14 +10,14 @@
     --text-main: #e6edf3 !important;            /* White text */
     --text-muted: #8b949e !important;           /* Gray text */
     
-    /* Stack Theme Overrides (Prevents white flashes) */
+    /* Stack Theme Overrides */
     --body-text: #e6edf3 !important;
     --heading-text: #ffffff !important;
 }
 
 /* 2. APPLY BACKGROUND & TEXT COLORS */
+/* REMOVED [data-scheme="light"] from here to allow the Easter Egg to take over */
 body, 
-[data-scheme="light"] body,
 [data-scheme="dark"] body {
     background-color: var(--body-background) !important;
     color: var(--text-main) !important;
@@ -37,7 +37,7 @@ body,
     border: 1px solid var(--card-border) !important;
     border-radius: 16px !important; 
     padding: 0 !important; 
-    flex-direction: column !important; /* Image on TOP */
+    flex-direction: column !important; 
     height: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: none !important; 
@@ -47,7 +47,7 @@ body,
 .article-list--compact article:hover {
     transform: translateY(-5px);
     border-color: var(--primary) !important; 
-    box-shadow: 0 0 20px rgba(255, 0, 128, 0.2) !important; /* Pink Glow */
+    box-shadow: 0 0 20px rgba(255, 0, 128, 0.2) !important; 
 }
 
 /* 5. FIX IMAGES */
@@ -55,7 +55,7 @@ body,
     width: 100% !important;
     height: 200px !important; 
     margin: 0 !important;
-    clip-path: none !important; /* Removes Stack's diagonal cut */
+    clip-path: none !important; 
 }
 
 .article-list--compact article .article-image img {
@@ -72,15 +72,12 @@ body,
     border-radius: 16px !important;
 }
 
-/* 7. LAYOUT OVERRIDES (The "Sidebar Up" Fix) */
-
-/* Hide the default Left Sidebar on desktop */
+/* 7. LAYOUT OVERRIDES */
 @media (min-width: 1024px) {
     .sidebar {
         display: none !important;
     }
     
-    /* Center the main content */
     .main-container {
         min-height: 100vh !important;
         width: 100% !important;
@@ -90,9 +87,8 @@ body,
         margin-top: 0 !important;
     }
 
-    /* Adjust Grid for full width */
     .article-list--compact {
-        grid-template-columns: repeat(3, 1fr) !important; /* 3 Columns looks better centered */
+        grid-template-columns: repeat(3, 1fr) !important; 
     }
 }
 
@@ -103,68 +99,63 @@ body,
     max-width: 100% !important; 
 }
 
-/* Ensure the body doesn't have default browser margin */
 body {
     padding-top: 0 !important;
     margin-top: 0 !important;
 }
 
 /* 9. THE FINAL GAP FIX */
-/* This targets the inner wrapper that Stack often uses for padding */
 main, .main {
     padding-top: 0 !important;
     margin-top: 0 !important;
 }
 
-/* Sets a specific small gap for the Nav Bar so it doesn't touch the browser edge */
 nav {
     margin-top: 20px !important; 
 }
 
-/* 10. WIDE LAYOUT OVERRIDE (For Projects Page) */
-/* This overrides the strict 900px limit just for pages marked as 'wide-layout' */
+/* 10. WIDE LAYOUT OVERRIDE */
 .wide-layout .main-container {
     max-width: 1400px !important;
-}/* 11. CV PAGE - FLAT NAVY THEME (NO CARD) - ENLARGED FONT */
+}
 
+/* 11. CV PAGE - FLAT NAVY THEME (NO CARD) */
 .cv-content {
-    background: transparent !important; /* Removes the card */
+    background: transparent !important; 
     border: none !important;            
     box-shadow: none !important;        
     padding: 0 !important;              
     color: #e6edf3 !important;          
-    font-size: 1.25rem; /* Increased base text size (was 1.1rem) */
-    line-height: 1.8;   /* Slightly looser line height for the bigger text */
+    font-size: 1.25rem; 
+    line-height: 1.8;   
 }
 
 .cv-main-title {
     color: #ffffff !important;
-    font-size: 2.8rem; /* Scaled up the main name (was 2.5rem) */
+    font-size: 2.8rem; 
     font-weight: 800;
     margin-bottom: 12px;
 }
 
 .cv-description {
     color: #8b949e !important; 
-    font-size: 1.4rem; /* Scaled up the subtitle (was 1.2rem) */
+    font-size: 1.4rem; 
     margin-bottom: 45px;
 }
 
-/* Upgraded Slate Blue Headers */
 .cv-content h2 {
     color: #A2B6D9 !important; 
     border-bottom: 1px solid rgba(162, 182, 217, 0.2) !important;
     padding-bottom: 12px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 1.7rem; /* Scaled up section headers (was 1.4rem) */
+    font-size: 1.7rem; 
     margin-top: 50px;
 }
 
-/* Clean white subheadings */
 .cv-content h3 {
     color: #ffffff !important; 
-    font-size: 1.35rem; /* Explicitly bumped up the subheaders */
+    font-size: 1.35rem; 
     margin-top: 30px;
     margin-bottom: 10px;
 }
@@ -173,7 +164,6 @@ nav {
     color: #ffffff !important; 
 }
 
-/* Crisp Blue Links */
 .cv-content a {
     color: #58a6ff !important; 
     text-decoration: none;
@@ -185,13 +175,11 @@ nav {
     border-bottom: 1px solid #ffffff;
 }
 
-/* List Items */
 .cv-content li {
     line-height: 1.8;
-    margin-bottom: 14px; /* Added more breathing room between bullets */
+    margin-bottom: 14px; 
 }
 
-/* Clean Blockquote */
 .cv-content blockquote {
     border-left: 2px solid #30363d !important;
     padding-left: 18px;
@@ -200,11 +188,69 @@ nav {
     font-size: 1.2rem;
 }
 
-
-/* Mobile Responsive Fix for Enlarged CV Fonts */
 @media (max-width: 768px) {
     .cv-main-title { font-size: 2rem !important; }
     .cv-description { font-size: 1.1rem !important; margin-bottom: 25px; }
     .cv-content { font-size: 1.05rem !important; }
     .cv-content h2 { font-size: 1.3rem !important; margin-top: 30px; }
+}
+
+/* 13. THE "AMBER TERMINAL" EASTER EGG (Hijacks Light Mode) */
+[data-scheme="light"] {
+    --body-background: #050505 !important; 
+    --card-background: transparent !important;
+    --card-border: #FFB000 !important;     
+    --primary: #FFB000 !important;
+    --secondary: #FFB000 !important;
+    --text-main: #FFB000 !important;
+    --text-muted: #b37b00 !important;      
+    --body-text: #FFB000 !important;
+    --heading-text: #FFB000 !important;
+}
+
+/* Force Amber font & color in Terminal Mode */
+[data-scheme="light"] body,
+[data-scheme="light"] .main-container *,
+[data-scheme="light"] h1, [data-scheme="light"] h2, [data-scheme="light"] h3,
+[data-scheme="light"] p, [data-scheme="light"] a, [data-scheme="light"] span,
+[data-scheme="light"] li, [data-scheme="light"] div {
+    font-family: 'Courier New', Courier, monospace !important;
+    color: #FFB000 !important;
+    text-shadow: 0 0 4px rgba(255, 176, 0, 0.4); 
+}
+
+[data-scheme="light"] .cv-content h2,
+[data-scheme="light"] .blog-card-header,
+[data-scheme="light"] a {
+    border-color: #FFB000 !important;
+}
+
+[data-scheme="light"] a:hover,
+[data-scheme="light"] .blog-list-card:hover,
+[data-scheme="light"] .news-card:hover {
+    background-color: #FFB000 !important;
+    color: #000000 !important;
+    text-shadow: none !important;
+}
+
+[data-scheme="light"] a:hover *,
+[data-scheme="light"] .blog-list-card:hover *,
+[data-scheme="light"] .news-card:hover * {
+    color: #000000 !important; 
+}
+
+[data-scheme="light"] .hero-card, 
+[data-scheme="light"] #hero-card-id,
+[data-scheme="light"] .partial-hero-container {
+    background: #0a0a0a !important; 
+    border: 2px solid #FFB000 !important; 
+    box-shadow: 0 0 15px rgba(255, 176, 0, 0.15) !important;
+}
+
+/* Clean Photo Mode: Removed the sepia filter to keep photos in full color */
+[data-scheme="light"] .hero-card img, 
+[data-scheme="light"] .avatar,
+[data-scheme="light"] .article-image img {
+    border: 2px solid #FFB000 !important;
+    filter: none !important; /* Forces original colors */
 }
