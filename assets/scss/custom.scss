@@ -125,5 +125,86 @@ nav {
 /* This overrides the strict 900px limit just for pages marked as 'wide-layout' */
 .wide-layout .main-container {
     max-width: 1400px !important;
+}/* 11. CV PAGE - FLAT NAVY THEME (NO CARD) - ENLARGED FONT */
+
+.cv-content {
+    background: transparent !important; /* Removes the card */
+    border: none !important;            
+    box-shadow: none !important;        
+    padding: 0 !important;              
+    color: #e6edf3 !important;          
+    font-size: 1.25rem; /* Increased base text size (was 1.1rem) */
+    line-height: 1.8;   /* Slightly looser line height for the bigger text */
 }
 
+.cv-main-title {
+    color: #ffffff !important;
+    font-size: 2.8rem; /* Scaled up the main name (was 2.5rem) */
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.cv-description {
+    color: #8b949e !important; 
+    font-size: 1.4rem; /* Scaled up the subtitle (was 1.2rem) */
+    margin-bottom: 45px;
+}
+
+/* Upgraded Slate Blue Headers */
+.cv-content h2 {
+    color: #A2B6D9 !important; 
+    border-bottom: 1px solid rgba(162, 182, 217, 0.2) !important;
+    padding-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.7rem; /* Scaled up section headers (was 1.4rem) */
+    margin-top: 50px;
+}
+
+/* Clean white subheadings */
+.cv-content h3 {
+    color: #ffffff !important; 
+    font-size: 1.35rem; /* Explicitly bumped up the subheaders */
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.cv-content strong {
+    color: #ffffff !important; 
+}
+
+/* Crisp Blue Links */
+.cv-content a {
+    color: #58a6ff !important; 
+    text-decoration: none;
+    border-bottom: 1px solid rgba(88, 166, 255, 0.3);
+}
+
+.cv-content a:hover {
+    color: #ffffff !important; 
+    border-bottom: 1px solid #ffffff;
+}
+
+/* List Items */
+.cv-content li {
+    line-height: 1.8;
+    margin-bottom: 14px; /* Added more breathing room between bullets */
+}
+
+/* Clean Blockquote */
+.cv-content blockquote {
+    border-left: 2px solid #30363d !important;
+    padding-left: 18px;
+    color: #8b949e !important;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+
+/* Mobile Responsive Fix for Enlarged CV Fonts */
+@media (max-width: 768px) {
+    .cv-main-title { font-size: 2rem !important; }
+    .cv-description { font-size: 1.1rem !important; margin-bottom: 25px; }
+    .cv-content { font-size: 1.05rem !important; }
+    .cv-content h2 { font-size: 1.3rem !important; margin-top: 30px; }
+}

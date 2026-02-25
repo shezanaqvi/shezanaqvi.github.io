@@ -4,7 +4,7 @@ layout: "cv"
 type: "page"
 slug: "cv"
 bodyClass: "wide-layout"  
-description: "Robotics & AI Researcher | Electrical Engineering Undergrad at LUMS"
+description: ""
 image: "img/avatar.png"
 comments: false
 menu:
@@ -12,66 +12,66 @@ menu:
         weight: 3
 ---
 
-# Sheza Abbas Naqvi
-**Robotics & Perception Researcher** *Islamabad/Lahore, Pakistan* | *[26100161@lums.edu.pk](mailto:26100161@lums.edu.pk)* | *[LinkedIn](https://linkedin.com/in/sheza-naqvi)*
+<!-- # Sheza Abbas Naqvi -->
+**Robotics & Perception Researcher** Islamabad, Pakistan | [26100161@lums.edu.pk](mailto:26100161@lums.edu.pk) | [shezanaqvi.github.io](https://shezanaqvi.github.io) | [LinkedIn](https://linkedin.com/in/sheza-naqvi)
 
 ---
 
-## 🔬 Research Interests
-**Robust State Estimation & Control** | **Multi-Modal Sensor Fusion (SLAM)** | **Distributed Multi-Agent Systems** | **Learning-Based Control**
+## Research Interests
+**Experimental Field Robotics** | **Robust State Estimation and Control in GPS-Denied Environments** | **Distributed Multi-Agent Control** | **Learning-Based Control** | **Hardware-in-the-Loop (HIL) Simulation**
 
 ---
 
-## 🎓 Education
-**Lahore University of Management Sciences (LUMS)** | *Sept 2022 – May 2026* **BS Electrical Engineering** (Minor in Computer Science)  
-* **Relevant Coursework:** Mobile Robotics, Dynamic Programming & RL, Machine Learning, Feedback Control Systems, Signals & Systems, Network-Centric Computing.
+## Education
+**Lahore University of Management Sciences (LUMS)**<br>
+**Bachelor of Science in Electrical Engineering | Minor in Computer Science** Sept 2022 – May 2026
+
+**Relevant Courses:** Mobile Robotics, Junior Design Studio (Robotics), Dynamic Programming and Reinforcement Learning, Machine Learning, Computer Vision, Deep Learning, Communication Systems, Feedback Control Systems, Signals and Systems.
 
 ---
 
-## 🛠 Technical Skills
-* **Robotics:** ROS/ROS2, FAST-LIO2, ArduPilot/PX4, MoveIt, Gazebo, LiDAR Processing.
-* **Languages:** C++ (Strong), Python (Advanced), MATLAB, SQL.
-* **AI & Vision:** OpenCV, PyTorch, TensorFlow, Keras, Agisoft Metashape.
-* **DevOps/Tools:** Linux (Ubuntu), Docker, Git, SolidWorks.
+## Technical Skills
+* **Hardware & Embedded:** Odroid N2+, Raspberry Pi (4/5), Pixhawk 6C (ArduPilot/PX4), Livox Mid-360 LiDAR, Intel RealSense D455, UART/I2C/Serial Interfacing, Custom Carbon Fiber Frame Assembly, Soldering & Circuit Integration.
+* **Software & Control:** ROS/ROS2 (Melodic/Noetic/Humble/Jazzy), FAST-LIVO2, FAST-LIO, LIO-SAM, MAVROS, MAVLink, OpenCV, Docker, Linux (Ubuntu 20.04/24.04).
+* **Programming:** C++, Python (Advanced), MATLAB, Git.
+* **AI & Vision:** PyTorch, TensorFlow, Keras, Agisoft Metashape.
 
 ---
 
-## 💼 Research & Experience
+## Research Experience
 
-### **Autonomous UAV-Based Crop Growth Mapping (Senior Year Project)** *May 2025 – Present*
-Leading a multimodal data campaign for wheat phenotyping to address food security.
-* **Hardware:** Architected a 500mm carbon-fiber quadcopter (Pixhawk 6C, Odroid N2+, Livox Mid-360).
-* **Autonomy:** Developed a real-time stack on Linux integrating **FAST-LIVO2** LiDAR odometry and **ArduPilot EKF3** fusion.
-* **Mapping:** Generated high-fidelity 3D orthomosaics using Agisoft Metashape & Open3D for spatial-temporal analysis.
+### **Autonomous UAV-Based Crop Growth Mapping (Senior Year Project)** | *May 2025 – Present*
+* **Hardware Architecture:** Engineered a custom 500mm carbon-fiber quadrotor from scratch, integrating a Livox Mid-360 LiDAR and Odroid N2+ payload with a custom power distribution system.
+* **Control System:** Developed a custom MAVROS control node to act as a "Virtual GPS," converting onboard FAST-LIVO2 state estimation into velocity commands for the Pixhawk 6C flight controller.
+* **Validation:** Designed an extrinsic calibration system using AprilTags to quantify SLAM drift, serving as a proxy for Motion Capture ground truth in field settings.
+* **Optimization:** Ported and optimized the FAST-LIVO2 stack for ARM64 architecture, guaranteeing real-time 50Hz performance.
+* **Digital Twins:** Constructed high-fidelity 4D spatiotemporal crop models using Agisoft Metashape and Open3D for granular volumetric analysis.
 
-### **Safe Multi-Agent RL for Cooperative Navigation** *Sept 2025 – Dec 2025*
-*Developed a safe navigation framework combining reinforcement learning with control-theoretic safety.*
-* Built a custom Python simulation to train a decentralized **Soft Actor-Critic (SAC)** model with a centralized attention critic.
-* Integrated a hybrid **MPC safety shield** (ACADOS) to guarantee collision constraints during training, achieving **66.5% success** in obstacle-dense environments.
-* Implemented a three-stage curriculum learning strategy to progressively learn formation control and obstacle avoidance.
+### **Safe Multi-Agent RL for Cooperative Navigation** | *Sept 2025 – Dec 2025*
+* Developed a decentralized navigation framework combining Soft Actor-Critic (SAC) with Model Predictive Control (MPC) safety shields.
+* Built a custom Python simulation environment to train agents in obstacle-dense scenarios, achieving an 89.4% success rate.
+* Implemented a three-stage curriculum learning strategy for progressive obstacle reasoning.
 
-### **Stochastic Utility-Aware Multi-Robot Task Allocation** *Sept 2025 – Dec 2025*
-*Designed a unified warehouse coordination system for conflict-free multi-agent planning.*
-* Proposed a hybrid architecture combining **SCOBA** for utility-based task allocation and **PM-CBS** for conflict-free path planning.
-* Implemented **EKF localization** with a beam-based LiDAR model to robustly track trajectories under sensing noise.
-* Achieved **zero collisions** and superior utility efficiency compared to Greedy A* and Q-learning baselines in simulation.
-
-### **Visual-to-Motion Robotic Drawing** *Jan 2025 – April 2025*
-*Developed a vision-guided sketching system for an **Interbotix Widow X 250s** arm.*
-* Designed a pipeline: Image contour extraction → Trajectory generation → Real-time execution via **MoveIt**.
-* Performed extrinsic calibration using RGB-D cameras (RealSense D455) and projective geometry.
-
-### **Real-Time Age & Gender Prediction** *Jan 2025 – April 2025*
-*Built a dual-head **ResNet** deep learning system for simultaneous age regression and gender classification.*
-* Implemented **Bayesian inference** with Monte Carlo dropout to quantify predictive uncertainty.
-* Deployed via **TensorFlow.js** for real-time in-browser inference.
+### **Stochastic Utility-Aware Multi-Robot Task Allocation** | *Sept 2025 – Dec 2025*
+* Designed a warehouse coordination system combining Stochastic Utility Allocation (SCOBA) with Priority-Based Conflict-Based Search (PM-CBS).
+* Implemented EKF localization on topometric region graphs to robustly track trajectories under sensing noise.
+* Achieved zero collisions and superior utility efficiency compared to Greedy A* and Q-learning baselines.
 
 ---
 
-## 👩‍🏫 Teaching Experience
-* **TA - Communication Systems (EE380):** (Sept 2025 – Present) Conducted tutorials and graded for 30+ students.
+## Teaching Experience
+
+### **Teaching Assistant — AI for Robotics (Graduate Level, AI 641)** | *Jan 2026 – Present*
+* Designing labs aligned with core course concepts and grading course components for graduate-level students.
+
+### **Teaching Assistant — Junior Design Studio Robotics (EE3002)** | *Jan 2026 – Present*
+* Designing and grading labs; conducting tutorials and lab sessions.
+
+### **Teaching Assistant — Communication Systems (EE380)** | *Sept 2025 – Dec 2025*
+* Designed problem sets and quizzes; conducted tutorials for 30+ students to reinforce theoretical understanding.
+
 ---
 
-## 🏆 Honors & Media
-* **Featured Research:** "Smarter Farming, Lower Cost" – Center for Water Informatics (WIT), 2025.
-* **Writing:** Authored "CYTE Foundation: Educating Pakistan's Future" & Co-Editor-in-Chief of *SuperNova Gazette*.
+## Honors & Media
+* **Featured Research:** "Smarter Farming, Lower Cost," Center for Water Informatics (WIT), 2025.
+* **TOEFL iBT:** Total Score 110 (Reading: 29, Listening: 29, Speaking: 25, Writing: 27).
