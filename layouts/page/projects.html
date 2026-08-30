@@ -15,7 +15,8 @@
         A collection of my work in robotics, perception, and autonomy.
     </p>
 
-<div style="margin-bottom: 60px;">
+    <!-- Senior Year Project Section -->
+    <div style="margin-bottom: 60px;">
         <h2 style="
             font-size: 2rem; color: #cc0000; border-bottom: 1px solid rgba(139, 0, 0, 0.4); 
             padding-bottom: 15px; margin-bottom: 30px; display: flex; align-items: center; gap: 10px;">
@@ -55,13 +56,13 @@
                     <br><br>
                     <strong>The Implementation:</strong> Integrated a Livox MID360 LiDAR and Arducam RGB payload with an Odroid N2+ companion computer on a custom 500mm quadrotor. Deployed a ROS-based mission interface for autonomous raster flights, utilizing the FAST-LIVO2 C++ stack for robust LiDAR-inertial state estimation. The pipeline generated field-aligned structural representations and high-fidelity 3D maps, supporting localized temporal canopy-height comparisons evaluated to centimeter-scale accuracy against manual ground truth.
                 </p>
-                
-                <div class="card-links" style="margin-top: auto;">
-                </div>
+                <div class="card-links" style="margin-top: auto;"></div>
             </div>
         </div>
     </div>
-<div style="margin-bottom: 60px;">
+
+    <!-- Research & Engineering Section -->
+    <div style="margin-bottom: 60px;">
         <h2 style="
             font-size: 2rem; color: #cc0000; border-bottom: 1px solid rgba(139, 0, 0, 0.4); 
             padding-bottom: 15px; margin-bottom: 30px; display: flex; align-items: center; gap: 10px;">
@@ -92,12 +93,12 @@
                     </p>
                     <div class="card-links">
                         <a href="https://github.com/musabali314/safe-marl-cooperative-navigation" target="_blank" class="link-btn">💻 Code</a>
-                        <a href="/pdfs/Safe_MARL_Paper.pdf" class="link-btn">📄 Paper</a>
+                        <a href="/pdfs/Safe_MARL_Paper.pdf" target="_blank" class="link-btn">📄 Paper</a>
                     </div>
                 </div>
             </div>
 
-<div class="project-card">
+            <div class="project-card">
                 <div class="card-media-area grid-media" style="overflow: hidden;">
                     <video class="card-img" autoplay loop muted playsinline>
                         <source src="/img/scoba_demo.mp4" type="video/mp4">
@@ -121,9 +122,9 @@
                     </div>
                 </div>
             </div>
-<div class="project-card">
+
+            <div class="project-card">
                 <div class="card-media-area grid-media" style="overflow: hidden;">
-                    <!-- Adjust the src filename to match your actual video file -->
                     <video class="card-img" autoplay loop muted playsinline>
                         <source src="/img/sim2real.mp4" type="video/mp4">
                     </video>
@@ -146,9 +147,9 @@
                     </div>
                 </div>
             </div>
-<div class="project-card">
+
+            <div class="project-card">
                 <div class="card-media-area grid-media" style="overflow: hidden;">
-                    <!-- Adjust the src filename to match your actual video file -->
                     <video class="card-img" autoplay loop muted playsinline>
                         <source src="/img/sfmproject.mp4" type="video/mp4">
                     </video>
@@ -172,7 +173,8 @@
                     </div>
                 </div>
             </div>
-<div class="project-card">
+
+            <div class="project-card">
                 <div class="card-content" style="border-top: 4px solid #5e0000;">
                     <h4 class="card-title">Real-Time Age & Gender Prediction</h4>
                     <div style="margin-bottom: 15px;">
@@ -188,6 +190,62 @@
                     </p>
                     <div class="card-links">
                         <a href="/pdfs/Age_Gender_Report.pdf" target="_blank" class="link-btn">📄 Report</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Technical Documentation & Teaching Section -->
+    <div style="margin-bottom: 60px;">
+        <h2 style="
+            font-size: 2rem; color: #cc0000; border-bottom: 1px solid rgba(139, 0, 0, 0.4); 
+            padding-bottom: 15px; margin-bottom: 30px; display: flex; align-items: center; gap: 10px;">
+            <span style="font-size: 1.5rem;">📚</span> Technical Documentation & Teaching
+        </h2>
+
+        <div class="project-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
+            
+            <!-- Lab 9 Card -->
+            <div class="project-card">
+                <div class="card-content" style="border-top: 4px solid #8b0000;">
+                    <h4 class="card-title">Lab 9: Perception-Action & Sim2Real</h4>
+                    <div style="margin-bottom: 15px;">
+                        <span class="tech-tag">TF2</span>
+                        <span class="tech-tag">MoveIt 2</span>
+                        <span class="tech-tag">Sim2Real</span>
+                    </div>
+                    <p class="card-text">
+                        <strong>The Concept:</strong> Authored curriculum guiding students through building perception-action pipelines using the Interbotix WidowX 250s manipulator[cite: 3]. Covered spatial scaling, TF2 transformations, and Cartesian path planning[cite: 3]. 
+                        <br><br>
+                        <strong>Hardware Deployment:</strong> Developed a supplementary Sim2Real module addressing physical deployment challenges such as friction and lens distortion[cite: 4]. The module instructs on dynamic vision integration utilizing RealSense camera calibration and 6-DOF AprilTag fiducial tracking[cite: 4].
+                    </p>
+                    <div class="card-links">
+                        <a href="/pdfs/lab9_part1.pdf" target="_blank" class="link-btn">📄 Part 1</a>
+                        <a href="/pdfs/lab9_part2.pdf" target="_blank" class="link-btn">📄 Part 2</a>
+                        <a href="YOUR_YOUTUBE_LINK_HERE" target="_blank" class="link-btn" style="color: #ff4444;">🎥 Hardware Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lab 10 Card -->
+            <div class="project-card">
+                <div class="card-content" style="border-top: 4px solid #8b0000;">
+                    <h4 class="card-title">Lab 10: Autonomous Manipulation</h4>
+                    <div style="margin-bottom: 15px;">
+                        <span class="tech-tag">3D Spatial Reasoning</span>
+                        <span class="tech-tag">Inverse Kinematics</span>
+                        <span class="tech-tag">AprilTags</span>
+                    </div>
+                    <p class="card-text">
+                        <strong>The Concept:</strong> Designed an advanced laboratory module focused on 3D spatial reasoning and logic-based manipulation for vision-based block sorting and stacking[cite: 5]. 
+                        <br><br>
+                        <strong>Hardware Deployment:</strong> The manual guides students through complex trajectory constraints, including dynamic Z-height calculations for tower building, grasp symmetry optimization using modulo operations, and strategies for avoiding kinematic singularities during manipulator execution[cite: 5].
+                    </p>
+                    <div class="card-links">
+                        <a href="/pdfs/lab10.pdf" target="_blank" class="link-btn">📄 Lab Manual</a>
+                        <a href="YOUR_YOUTUBE_LINK_HERE" target="_blank" class="link-btn" style="color: #ff4444;">🎥 Singularity Demo</a>
                     </div>
                 </div>
             </div>
