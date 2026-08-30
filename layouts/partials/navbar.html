@@ -1,7 +1,7 @@
 <nav style="
     width: 100%;
-    border-bottom: 1px solid #30363d;
-    margin-bottom: 40px;
+    border-bottom: 2px solid #031529;
+    margin-bottom: 50px;
     background: #006d77;
 ">
     
@@ -15,7 +15,7 @@
     ">
         
         <div style="font-weight: 800; font-size: 3rem; color: #fff; letter-spacing: -1px;">
-            Sheza Abbas Naqvi<span style="color: #ff0080;"></span>
+            Sheza Abbas Naqvi<span style="color: #031529;"></span>
         </div>
 
         <div style="display: flex; gap: 25px; align-items: center;">
@@ -23,7 +23,7 @@
             <a href="/" style="
                 text-decoration: none; 
                 transition: color 0.2s;
-                {{ if .IsHome }} color: #fff; font-weight: 700; border-bottom: 2px solid #ff0080; {{ else }} color: #8b949e; {{ end }}
+                {{ if .IsHome }} color: #fff; font-weight: 700; border-bottom: 2px solid #031529; {{ else }} color: #8b949e; {{ end }}
             " onmouseover="this.style.color='#fff'" onmouseout="this.style.color='{{ if .IsHome }}#fff{{ else }}#8b949e{{ end }}'">
                 Home
             </a>
@@ -31,7 +31,7 @@
             <a href="/projects" style="
                 text-decoration: none; 
                 transition: color 0.2s;
-                {{ if eq .Title "Projects" }} color: #fff; font-weight: 700; border-bottom: 2px solid #ff0080; {{ else }} color: #8b949e; {{ end }}
+                {{ if eq .Title "Projects" }} color: #fff; font-weight: 700; border-bottom: 2px solid #031529; {{ else }} color: #8b949e; {{ end }}
             " onmouseover="this.style.color='#fff'" onmouseout="this.style.color='{{ if eq .Title "Projects" }}#fff{{ else }}#8b949e{{ end }}'">
                 Projects
             </a>
