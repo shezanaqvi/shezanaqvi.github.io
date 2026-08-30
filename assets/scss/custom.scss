@@ -3,10 +3,10 @@
 /* 1. GLOBAL VARIABLES - DEFAULT (Deep Blue Dashboard) */
 /* This is your standard professional mode */
 :root, [data-scheme="light"] {
-    --body-background: #090329 !important;      /* Your Deep Blue */
+    --body-background: #006d77 !important;      /* Your Deep Blue */
     --card-background: #031529 !important;      /* Standard dark card */
     --card-border: #30363d !important;          /* Subtle borders */
-    --primary: #ff0080 !important;              /* Neon Pink */
+    --primary: #e29578 !important;              /* Neon Pink */
     --secondary: #6b1885 !important;            /* Your Neon Purple */
     --text-main: #e6edf3 !important;            /* White text */
     --text-muted: #8b949e !important;           /* Gray text */
@@ -19,7 +19,7 @@
 /* 2. APPLY BACKGROUND & TEXT COLORS */
 body, 
 [data-scheme="light"] body {
-    background-color: #090329 !important;
+    background-color: #006d77 !important;
     color: #e6edf3 !important;
 }
 

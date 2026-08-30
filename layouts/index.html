@@ -4,12 +4,12 @@
     {{ partial "nerd-stuff.html" . }}
 
     <!-- Project Hail Mary: Petrova Line & Astrophage Background -->
-<div class="deep-space-container">
+<!-- <div class="deep-space-container">
     <div class="petrova-line"></div>
     <div class="astrophage layer-1"></div>
     <div class="astrophage layer-2"></div>
     <div class="astrophage layer-3"></div>
-</div>
+</div> -->
 
 <style>
     /* 1. Base Container Setup */
@@ -20,7 +20,7 @@
         width: 100vw; 
         height: 100vh;
         z-index: -1;
-        background-color: #090329; /* Deep Tau Ceti / Sol Space */
+        background-color: #006d77; /* Deep Tau Ceti / Sol Space */
         overflow: hidden;
         pointer-events: none;
     }
@@ -97,47 +97,4 @@
         100% { opacity: 1; filter: blur(12px); }
     }
 </style>
-<!-- <section id="core-competencies" style="margin-bottom: 80px;">
-        <h2 style="font-size: 2rem; color: #cc0000; border-bottom: 1px solid rgba(139, 0, 0, 0.4); padding-bottom: 15px; margin-bottom: 30px;">
-            ⚙️ Core Competencies
-        </h2>
-        
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
-            
-            <!-- Category 1: Robotics & Simulation -->
-            <div style="background: rgba(10, 15, 30, 0.6); border: 1px solid rgba(139, 0, 0, 0.3); border-radius: 10px; padding: 25px;">
-                <h3 style="color: #ffffff; font-size: 1.3rem; margin-top: 0; margin-bottom: 15px;">Robotics & Simulation</h3>
-                <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-                    <span style="background: #1a1a2e; color: #a2b6d9; padding: 6px 14px; border-radius: 20px; font-size: 0.9rem; border: 1px solid #cc0000;">ROS / ROS 2 (Humble, Jazzy)</span>
-                    <span style="background: #1a1a2e; color: #a2b6d9; padding: 6px 14px; border-radius: 20px; font-size: 0.9rem; border: 1px solid #cc0000;">MAVROS & MAVLink</span>
-                    <span style="background: #1a1a2e; color: #a2b6d9; padding: 6px 14px; border-radius: 20px; font-size: 0.9rem; border: 1px solid #cc0000;">URDF Modeling</span>
-                    <span style="background: #1a1a2e; color: #a2b6d9; padding: 6px 14px; border-radius: 20px; font-size: 0.9rem; border: 1px solid #cc0000;">Gazebo / HIL Simulation</span>
-                </div>
-            </div>
-
-            <!-- Category 2: Edge & Hardware -->
-            <div style="background: rgba(10, 15, 30, 0.6); border: 1px solid rgba(139, 0, 0, 0.3); border-radius: 10px; padding: 25px;">
-                <h3 style="color: #ffffff; font-size: 1.3rem; margin-top: 0; margin-bottom: 15px;">Edge & Hardware</h3>
-                <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-                    <span style="background: #1a1a2e; color: #a2b6d9; padding: 6px 14px; border-radius: 20px; font-size: 0.9rem; border: 1px solid #cc0000;">Odroid N2+</span>
-                    <span style="background: #1a1a2e; color: #a2b6d9; padding: 6px 14px; border-radius: 20px; font-size: 0.9rem; border: 1px solid #cc0000;">Raspberry Pi (4/5)</span>
-                    <span style="background: #1a1a2e; color: #a2b6d9; padding: 6px 14px; border-radius: 20px; font-size: 0.9rem; border: 1px solid #cc0000;">Pixhawk (ArduPilot/PX4)</span>
-                    <span style="background: #1a1a2e; color: #a2b6d9; padding: 6px 14px; border-radius: 20px; font-size: 0.9rem; border: 1px solid #cc0000;">NVIDIA Jetson</span>
-                </div>
-            </div>
-
-            <!-- Category 3: Software & Vision -->
-            <div style="background: rgba(10, 15, 30, 0.6); border: 1px solid rgba(139, 0, 0, 0.3); border-radius: 10px; padding: 25px;">
-                <h3 style="color: #ffffff; font-size: 1.3rem; margin-top: 0; margin-bottom: 15px;">Software & Vision</h3>
-                <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-                    <span style="background: #1a1a2e; color: #a2b6d9; padding: 6px 14px; border-radius: 20px; font-size: 0.9rem; border: 1px solid #cc0000;">C++ (Advanced)</span>
-                    <span style="background: #1a1a2e; color: #a2b6d9; padding: 6px 14px; border-radius: 20px; font-size: 0.9rem; border: 1px solid #cc0000;">Python</span>
-                    <span style="background: #1a1a2e; color: #a2b6d9; padding: 6px 14px; border-radius: 20px; font-size: 0.9rem; border: 1px solid #cc0000;">OpenCV</span>
-                    <span style="background: #1a1a2e; color: #a2b6d9; padding: 6px 14px; border-radius: 20px; font-size: 0.9rem; border: 1px solid #cc0000;">Multiple-View Geometry</span>
-                    <span style="background: #1a1a2e; color: #a2b6d9; padding: 6px 14px; border-radius: 20px; font-size: 0.9rem; border: 1px solid #cc0000;">SLAM (FAST-LIVO2)</span>
-                </div>
-            </div>
-
-        </div>
-    </section> -->
 {{ end }}
